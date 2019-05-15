@@ -9,7 +9,7 @@
 	```
 	$ pod install
 	```
-4. Import the SDK in your AppDelegate and start EMMA session
+4. Import the SDK in your AppDelegate and start session in EMMA
 
 	```objective-c 
 	#import <EMMA_iOS/EMMA_iOS.h>
@@ -19,10 +19,10 @@
 	- (BOOL)application:(UIApplication *)application
 		didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-	    EMMAConfiguration * configuration = [EMMAConfiguration new];
-    	[configuration setSessionKey:@"example0ikl98"];
-    
-    	[EMMA startSessionWithConfiguration:configuration];
+		EMMAConfiguration * configuration = [EMMAConfiguration new];
+		[configuration setSessionKey:@"example0ikl98"];
+		    
+		[EMMA startSessionWithConfiguration:configuration];
     
 	}
 	@end

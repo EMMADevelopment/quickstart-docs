@@ -1,4 +1,4 @@
-1. Si no tienes cocoapods integrado en tu app sigue [esta guía](https://guides.cocoapods.org/using/getting-started.html#toc_3)
+1. Si no tienes cocoapods integrado en tu app, sigue [esta guía](https://guides.cocoapods.org/using/getting-started.html#toc_3)
 2. Integra la dependencia de EMMA en el fichero Podfile de la app
 
 	```ruby
@@ -18,11 +18,11 @@
 
 	- (BOOL)application:(UIApplication *)application
 		didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-	    EMMAConfiguration * configuration = [EMMAConfiguration new];
-    	[configuration setSessionKey:@"example0ikl98"];
-    
-    	[EMMA startSessionWithConfiguration:configuration];
+		    
+		EMMAConfiguration * configuration = [EMMAConfiguration new];
+		[configuration setSessionKey:@"example0ikl98"];
+		    
+		[EMMA startSessionWithConfiguration:configuration];
     
 	}
 	@end
