@@ -1,15 +1,15 @@
-1. Si no tienes cocoapods integrado en tu app sigue [esta guía](https://guides.cocoapods.org/using/getting-started.html#toc_3)
-2. Integra la dependencia de EMMA en el fichero Podfile de la app
+1. If you do not have cocapods integrate in your app follow [this guide](https://guides.cocoapods.org/using/getting-started.html#toc_3)
+2. Add EMMA dependeny to you Podfile file
 
 	```ruby
 	pod 'eMMa'
 	```
-3. Para descargar e instalar la dependencia ejecuta el siguiente comando en el terminal
+3. To download and install the dependency execute the following command in the terminal
 
 	```
 	$ pod install
 	```
-4. Importa el SDK en tu AppDelegate e inicia sesión en EMMA
+4. Import the SDK in your AppDelegate and start EMMA session
 
 	```objective-c 
 	#import <EMMA_iOS/EMMA_iOS.h>
