@@ -19,11 +19,11 @@
 		
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 	
-		let configuration = EMMAConfiguration()
-		configuration.sessionKey = "example0ikl98"
-		    
-		EMMA.startSession(with: configuration)
-		   
-		return true
+        let configuration = EMMAConfiguration()
+        configuration.sessionKey = "example0ikl98"
+    
+        EMMA.startSession(with: configuration)
+   
+        return true
 	}
 	```

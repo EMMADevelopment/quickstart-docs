@@ -19,10 +19,10 @@
 	- (BOOL)application:(UIApplication *)application
 		didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-		EMMAConfiguration * configuration = [EMMAConfiguration new];
-		[configuration setSessionKey:@"example0ikl98"];
-		    
-		[EMMA startSessionWithConfiguration:configuration];
+	    EMMAConfiguration * configuration = [EMMAConfiguration new];
+	    [configuration setSessionKey:@"example0ikl98"];
+	    
+	    [EMMA startSessionWithConfiguration:configuration];
     
 	}
 	@end
