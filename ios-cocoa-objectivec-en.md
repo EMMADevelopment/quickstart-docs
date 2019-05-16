@@ -1,4 +1,5 @@
 1. If you do not have cocapods integrate in your app follow [this guide](https://guides.cocoapods.org/using/getting-started.html#toc_3)
+
 2. Add EMMA dependeny to you Podfile file
 
 	```ruby
