@@ -26,7 +26,7 @@
 			     base.OnCreate();
 				    
 				  EMMA.Configuration configuration = new EMMA.Configuration.Builder(this)
-				  .SetSessionKey("example0ikl98")
+				  .SetSessionKey("%%%SESSION_KEY%%%")
 				  .Build();
 				
 				  EMMA.Instance.StartSession(configuration);
@@ -54,7 +54,7 @@
 	        {
 	    
 	            EMMAConfiguration configuration = new EMMAConfiguration();
-	            configuration.SessionKey = "example0ikl98";
+	            configuration.SessionKey = "%%%SESSION_KEY%%%";
 		
 	            EMMA.StartSessionWithConfiguration(configuration);			     
 	            return true;

@@ -11,7 +11,7 @@
 	```javascript
 	$(document).on('deviceready', function () {
 	    var config = {
-	        sessionKey: 'example0ikl98'
+	        sessionKey: '%%%SESSION_KEY%%%'
 	    };
 	    
         window.plugins.EMMA.startSession(config);

@@ -26,7 +26,7 @@
 	      const EMMA = window.plugins.EMMA;
 	
 	      const configuration = {
-	        sessionKey: 'example0ikl98',
+	        sessionKey: '%%%SESSION_KEY%%%',
 	      };
 	
 	      EMMA.startSession(configuration);

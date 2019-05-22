@@ -21,7 +21,7 @@
 		didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 		    
 	    EMMAConfiguration * configuration = [EMMAConfiguration new];
-	    [configuration setSessionKey:@"example0ikl98"];
+	    [configuration setSessionKey:@"%%%SESSION_KEY%%%"];
 	    
 	    [EMMA startSessionWithConfiguration:configuration];
     

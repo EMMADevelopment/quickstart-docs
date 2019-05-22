@@ -25,7 +25,7 @@
 	        super.onCreate();
 		
 	        val configuration = EMMA.Configuration.Builder(this)
-	            .setSessionKey("example0ikl98")
+	            .setSessionKey("%%%SESSION_KEY%%%")
 	            .build();
 		
 	        EMMA.getInstance().startSession(configuration);
