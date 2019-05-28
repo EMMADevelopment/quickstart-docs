@@ -1,4 +1,4 @@
-1. If you do not have cocapods integrated in your app, follow <a target="_blank" href="https://guides.cocoapods.org/using/getting-started.html#toc_3">this guide</a>
+1. If you do not have cocapods integrated in your app, follow <a target="_blank" rel="nofollow" href="https://guides.cocoapods.org/using/getting-started.html#toc_3">this guide</a>
 
 2. Add EMMA dependency to you Podfile file
 

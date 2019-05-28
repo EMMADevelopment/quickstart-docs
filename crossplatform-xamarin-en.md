@@ -1,4 +1,4 @@
-1.  Dowload the library in .dll format <a target="_blank" href="https://github.com/eMMaDevelopment/eMMa-Xamarin-SDK">here</a>
+1.  Dowload the library in .dll format <a target="_blank" rel="nofollow" href="https://github.com/eMMaDevelopment/eMMa-Xamarin-SDK">here</a>
 
 2.  For Android, add as reference the library EMMAAndroidBindings.dll and its dependency InstallReferrer.dll. For iOS, add the library EMMAiOSBindings.dll as reference
 
