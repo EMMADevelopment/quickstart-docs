@@ -8,8 +8,8 @@
 
 3. To download and install the dependency execute the following command in the terminal
 
-   ```
-   $ pod install
+   ```bash
+   pod install
    ```
 
 4. Import the SDK in your AppDelegate and start session in EMMA

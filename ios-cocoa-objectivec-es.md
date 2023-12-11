@@ -8,13 +8,13 @@
 
 3. Para descargar e instalar la dependencia ejecuta el siguiente comando en el terminal
 
-   ```
+   ```bash
    $ pod install
    ```
 
 4. Importa el SDK en tu AppDelegate e inicia sesión en EMMA
 
-   ```objective-c
+   ```objectivec
    #import <EMMA_iOS/EMMA_iOS.h>
 
    @implementation AppDelegate

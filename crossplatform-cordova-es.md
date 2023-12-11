@@ -3,7 +3,7 @@
 2. Añade el plugin al proyecto con el siguiente comando
 
    ```bash
-   $ cordova plugin add cordova-plugin-emma-sdk --save
+   cordova plugin add cordova-plugin-emma-sdk --save
    ```
 
 3. En el www/js/index.js añade el siguiente código

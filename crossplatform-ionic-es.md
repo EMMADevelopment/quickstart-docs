@@ -3,7 +3,7 @@
 2. Añade el plugin al proyecto con el siguiente comando
 
    ```bash
-   $ ionic cordova plugin add cordova-plugin-emma-sdk --save
+   ionic cordova plugin add cordova-plugin-emma-sdk --save
    ```
 
 3. En el src/app/app.component.ts añade el siguiente código

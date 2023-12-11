@@ -3,7 +3,7 @@
 2. Add the plugin to the project with the following command
 
    ```bash
-   $ phonegap plugin add cordova-plugin-emma-sdk --save
+   phonegap plugin add cordova-plugin-emma-sdk --save
    ```
 
 3. In www/js/index.js add the following code

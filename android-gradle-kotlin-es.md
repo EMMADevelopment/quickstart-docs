@@ -10,7 +10,7 @@
 
    ```groovy
    dependencies {
-       implementation 'io.emma:eMMaSDK:4.7.+'
+       implementation 'io.emma:eMMaSDK:4.12.+'
    }
    ```
 

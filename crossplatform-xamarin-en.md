@@ -11,7 +11,7 @@
 
 4.  In your Android project, import the SDK in your Application class and start session in EMMA
 
-    ```c#
+    ```csharp
     using EMMASDK;
     using EMMASDK.Model;
 
@@ -38,7 +38,7 @@
 
 5.  In your iOS project, import the SDK in your AppDelegate class and start session in EMMA
 
-    ```c#
+    ```csharp
     using EMMASDK;
 
     namespace MyApp.iOS
