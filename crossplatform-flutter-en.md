@@ -31,7 +31,6 @@ class MyApp extends StatefulWidget {
     void initState() {
         super.initState();
         initPlatformState();
-        initEMMA()
 
         await EmmaFlutterSdk.shared
             .startSession("%%%SESSION_KEY%%%", debugEnabled: true);
