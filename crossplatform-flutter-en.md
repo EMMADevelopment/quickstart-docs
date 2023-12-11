@@ -2,39 +2,39 @@
 
 2. Añade la librería al proyecto con el siguiente comando
 
-   ```bash
-   flutter pub add emma_flutter_sdk
-   ```
+```bash
+flutter pub add emma_flutter_sdk
+```
 
 3. In lib/main.dart add the following code
 
-   ```dart
-        import 'dart:async';
-        import 'dart:io' show Platform;
+```dart
+import 'dart:async';
+import 'dart:io' show Platform;
 
-        import 'package:emma_flutter_sdk/emma_flutter_sdk.dart';
-        import 'package:flutter/material.dart';
-        import 'package:flutter/services.dart';
+import 'package:emma_flutter_sdk/emma_flutter_sdk.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-        void main() {
-            runApp(MyApp());
-        }
+void main() {
+    runApp(MyApp());
+}
 
-        class MyApp extends StatefulWidget {
-            @override
-            _MyAppState createState() => _MyAppState();
-        }
+class MyApp extends StatefulWidget {
+    @override
+    _MyAppState createState() => _MyAppState();
+    }
 
-        class _MyAppState extends State<MyApp> {
+    class _MyAppState extends State<MyApp> {
 
-            @override
-            void initState() {
-                super.initState();
-                initPlatformState();
-                initEMMA()
+    @override
+    void initState() {
+        super.initState();
+        initPlatformState();
+        initEMMA()
 
-                await EmmaFlutterSdk.shared
-                    .startSession("%%%SESSION_KEY%%%", debugEnabled: true);
-            }
-        }
-   ```
+        await EmmaFlutterSdk.shared
+            .startSession("%%%SESSION_KEY%%%", debugEnabled: true);
+    }
+}
+```

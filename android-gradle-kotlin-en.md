@@ -16,19 +16,19 @@
 
 3. Import the SDK in your Application class and start session in EMMA
 
-   ```java
-   import io.emma.android.EMMA;
+    ```java
+    import io.emma.android.EMMA;
 
-   class MyApplication: Application() {
+    class MyApplication: Application() {
 
-       override fun onCreate() {
-           super.onCreate();
+        override fun onCreate() {
+            super.onCreate();
 
-           val configuration = EMMA.Configuration.Builder(this)
-               .setSessionKey("%%%SESSION_KEY%%%")
-               .build();
+            val configuration = EMMA.Configuration.Builder(this)
+                .setSessionKey("%%%SESSION_KEY%%%")
+                .build();
 
-           EMMA.getInstance().startSession(configuration);
-       }
-   }
-   ```
+            EMMA.getInstance().startSession(configuration);
+        }
+    }
+    ```

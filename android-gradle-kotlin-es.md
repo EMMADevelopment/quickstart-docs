@@ -16,19 +16,19 @@
 
 3. Importa el SDK en la clase Application e inicia sessión en EMMA
 
-   ```kotlin
-   import io.emma.android.EMMA;
+    ```kotlin
+    import io.emma.android.EMMA;
 
-   class MyApplication: Application() {
+    class MyApplication: Application() {
 
-      override fun onCreate() {
-           super.onCreate();
+        override fun onCreate() {
+            super.onCreate();
 
-           val configuration = EMMA.Configuration.Builder(this)
-               .setSessionKey("%%%SESSION_KEY%%%")
-               .build();
+            val configuration = EMMA.Configuration.Builder(this)
+                .setSessionKey("%%%SESSION_KEY%%%")
+                .build();
 
-           EMMA.getInstance().startSession(configuration);
-       }
-   }
-   ```
+            EMMA.getInstance().startSession(configuration);
+        }
+    }
+    ```

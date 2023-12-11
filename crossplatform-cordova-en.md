@@ -8,16 +8,16 @@
 
 3. In www/js/index.js add the following code
 
-   ```javascript
-   var app = {
-     onDeviceReady: function() {
-       app.receivedEvent("deviceready");
+  ```javascript
+  var app = {
+    onDeviceReady: function() {
+      app.receivedEvent("deviceready");
 
-       var config = {
-         sessionKey: "%%%SESSION_KEY%%%"
-       };
+      var config = {
+        sessionKey: "%%%SESSION_KEY%%%"
+      };
 
-       window.plugins.EMMA.startSession(config);
-     }
-   };
-   ```
+      window.plugins.EMMA.startSession(config);
+    }
+  };
+  ```
