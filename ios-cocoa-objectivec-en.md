@@ -2,32 +2,32 @@
 
 2. Add EMMA dependeny to you Podfile file
 
-   ```ruby
-   pod 'eMMa'
-   ```
+```bash
+pod 'eMMa'
+```
 
 3. To download and install the dependency execute the following command in the terminal
 
-   ```bash
-   pod install
-   ```
+```bash
+pod install
+```
 
 4. Import the SDK in your AppDelegate and start session in EMMA
 
-   ```objectivec
-   #import <EMMA_iOS/EMMA_iOS.h>
+```objectivec
+#import <EMMA_iOS/EMMA_iOS.h>
 
-   @implementation AppDelegate
+@implementation AppDelegate
 
-   - (BOOL)application:(UIApplication *)application
-   	didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application
+   didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-       EMMAConfiguration * configuration = [EMMAConfiguration new];
-       [configuration setSessionKey:@"%%%SESSION_KEY%%%"];
+      EMMAConfiguration * configuration = [EMMAConfiguration new];
+      [configuration setSessionKey:@"%%%SESSION_KEY%%%"];
 
-       [EMMA startSessionWithConfiguration:configuration];
+      [EMMA startSessionWithConfiguration:configuration];
 
-   }
-   @end
+}
+@end
 
-   ```
+```

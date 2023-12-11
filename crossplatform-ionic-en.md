@@ -2,37 +2,37 @@
 
 2. Add the plugin to the project with the following command
 
-   ```bash
-   ionic cordova plugin add cordova-plugin-emma-sdk --save
-   ```
+```bash
+ionic cordova plugin add cordova-plugin-emma-sdk --save
+```
 
 3. In src/app/app.component.ts add the following code
 
-   ```typescript
-   declare var window: any;
+```typescript
+declare var window: any;
 
-   @Component({
-     selector: "app-root",
-     templateUrl: "app.component.html"
-   })
-   export class AppComponent {
-     constructor(
-       private platform: Platform,
-       private splashScreen: SplashScreen,
-       private statusBar: StatusBar
-     ) {
-       this.platform.ready().then(() => {
-         const EMMA = window.plugins.EMMA;
+@Component({
+  selector: "app-root",
+  templateUrl: "app.component.html"
+})
+export class AppComponent {
+  constructor(
+    private platform: Platform,
+    private splashScreen: SplashScreen,
+    private statusBar: StatusBar
+  ) {
+    this.platform.ready().then(() => {
+      const EMMA = window.plugins.EMMA;
 
-         const configuration = {
-           sessionKey: "%%%SESSION_KEY%%%"
-         };
+      const configuration = {
+        sessionKey: "%%%SESSION_KEY%%%"
+      };
 
-         EMMA.startSession(configuration);
+      EMMA.startSession(configuration);
 
-         this.statusBar.styleDefault();
-         this.splashScreen.hide();
-       });
-     }
-   }
-   ```
+      this.statusBar.styleDefault();
+      this.splashScreen.hide();
+    });
+  }
+}
+```

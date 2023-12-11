@@ -2,31 +2,31 @@
 
 2. Integra la dependencia de EMMA en el fichero Podfile de la app
 
-   ```ruby
-   pod 'eMMa'
-   ```
+```bash
+pod 'eMMa'
+```
 
 3. Para descargar e instalar la dependencia ejecuta el siguiente comando en el terminal
 
-   ```bash
-   pod install
-   ```
+```bash
+pod install
+```
 
 4. Importa el SDK en tu AppDelegate e inicia sesión en EMMA
 
-   ```swift
-   import EMMA_iOS
+```swift
+import EMMA_iOS
 
-   @UIApplicationMain
-   class AppDelegate: UIResponder, UIApplicationDelegate {
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
-   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-       let configuration = EMMAConfiguration()
-       configuration.sessionKey = "%%%SESSION_KEY%%%"
+      let configuration = EMMAConfiguration()
+      configuration.sessionKey = "%%%SESSION_KEY%%%"
 
-       EMMA.startSession(with: configuration)
+      EMMA.startSession(with: configuration)
 
-       return true
-   }
-   ```
+      return true
+}
+```

@@ -1,35 +1,35 @@
 1. Añade el repositorio de EMMA al fichero /app/build.gradle
 
-   ```groovy
-   repositories {
-       maven { url 'https://repo.emma.io/emma' }
-   }
-   ```
+```groovy
+repositories {
+    maven { url 'https://repo.emma.io/emma' }
+}
+```
 
 2. En ese mismo fichero, añade la dependencia de EMMA a la sección de dependencias
 
-   ```groovy
-   dependencies {
-       implementation 'io.emma:eMMaSDK:4.12.+'
-   }
-   ```
+```groovy
+dependencies {
+    implementation 'io.emma:eMMaSDK:4.12.+'
+}
+```
 
 3. Importa el SDK en la clase Application e inicia sessión en EMMA
 
-    ```java
-    import io.emma.android.EMMA;
+```java
+import io.emma.android.EMMA;
 
-    public class MyApplication extends Application {
+public class MyApplication extends Application {
 
-        @Override
-        public void onCreate() {
-            super.onCreate();
+    @Override
+    public void onCreate() {
+        super.onCreate();
 
-            EMMA.Configuration configuration = new EMMA.Configuration.Builder(this)
-                .setSessionKey("%%%SESSION_KEY%%%")
-                .build();
+        EMMA.Configuration configuration = new EMMA.Configuration.Builder(this)
+            .setSessionKey("%%%SESSION_KEY%%%")
+            .build();
 
-            EMMA.getInstance().startSession(configuration);
-        }
+        EMMA.getInstance().startSession(configuration);
     }
-    ```
+}
+```

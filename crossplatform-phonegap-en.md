@@ -2,18 +2,18 @@
 
 2. Add the plugin to the project with the following command
 
-   ```bash
-   phonegap plugin add cordova-plugin-emma-sdk --save
-   ```
+```bash
+phonegap plugin add cordova-plugin-emma-sdk --save
+```
 
 3. In www/js/index.js add the following code
 
-   ```javascript
-   $(document).on("deviceready", function() {
-     var config = {
-       sessionKey: "%%%SESSION_KEY%%%"
-     };
+```javascript
+$(document).on("deviceready", function() {
+  var config = {
+    sessionKey: "%%%SESSION_KEY%%%"
+  };
 
-     window.plugins.EMMA.startSession(config);
-   });
-   ```
+  window.plugins.EMMA.startSession(config);
+});
+```

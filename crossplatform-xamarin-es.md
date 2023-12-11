@@ -11,56 +11,56 @@
 
 4.  En tu proyecto Android, importa el SDK en tu clase Application e inicia sesión en EMMA
 
-    ```csharp
-    using EMMASDK;
-    using EMMASDK.Model;
+```csharp
+using EMMASDK;
+using EMMASDK.Model;
 
-    namespace MyApp.Droid
+namespace MyApp.Droid
+{
+    [Application]
+    public class MainApplication : Application
     {
-    	[Application]
-        public class MainApplication : Application
+        public MainApplication(IntPtr handle, JniHandleOwnership transer) :base(handle, transer) { }
+
+        public override void OnCreate()
         {
-            public MainApplication(IntPtr handle, JniHandleOwnership transer) :base(handle, transer) { }
+                base.OnCreate();
 
-            public override void OnCreate()
-           {
-    		     base.OnCreate();
+                EMMA.Configuration configuration = new EMMA.Configuration.Builder(this)
+                .SetSessionKey("%%%SESSION_KEY%%%")
+                .Build();
 
-    			  EMMA.Configuration configuration = new EMMA.Configuration.Builder(this)
-    			  .SetSessionKey("%%%SESSION_KEY%%%")
-    			  .Build();
-
-    			  EMMA.Instance.StartSession(configuration);
-            }
+                EMMA.Instance.StartSession(configuration);
         }
     }
-    ```
+}
+```
 
 5.  En tu proyecto iOS, importa el SDK en tu clase AppDelegate e inicia sesión en EMMA
 
-    ```csharp
-    using EMMASDK;
+```csharp
+using EMMASDK;
 
-    namespace MyApp.iOS
+namespace MyApp.iOS
+{
+    [Register("AppDelegate")]
+    public class AppDelegate : UIApplicationDelegate
     {
-        [Register("AppDelegate")]
-        public class AppDelegate : UIApplicationDelegate
+        public override UIWindow Window
         {
-            public override UIWindow Window
-            {
-                get;
-                set;
-            }
+            get;
+            set;
+        }
 
-            public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
-            {
+        public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
+        {
 
-                EMMAConfiguration configuration = new EMMAConfiguration();
-                configuration.SessionKey = "%%%SESSION_KEY%%%";
+            EMMAConfiguration configuration = new EMMAConfiguration();
+            configuration.SessionKey = "%%%SESSION_KEY%%%";
 
-                EMMA.StartSessionWithConfiguration(configuration);
-                return true;
-            }
+            EMMA.StartSessionWithConfiguration(configuration);
+            return true;
         }
     }
-    ```
+}
+```
